@@ -531,17 +531,15 @@ class SplashPresentation extends React.Component { // eslint-disable-line react/
     <img class="membership-promo-img" src="https://64.media.tumblr.com/b6a6e61377317334739f8fd744022e20/22145c27fae5e44b-22/s540x810/e373b72fab8cfc76249bd762b302ab389a3b4e10.png" alt="Scratch Membership Badge">
 
     <div class="content" bis_skin_checked="1">
-        <h2 class="membership-title">Join Scratch Membership</h2>
+        <h2 class="membership-title">{membershippromo.title}</h2>
 
         <p class="membership-text">
-            Ask a parent to help you join Scratch Membership! Members get a
-            profile picture frame, early access to new sprites, 20% off in the
-            Scratch Store, etc.
+            {membershippromo.subtitle}
         </p>
 
         <a href="/membership">
   <button class="join-btn">
-    Join Now
+      {membershippromo.buttonText}
   </button>
         </a>
           </div>
